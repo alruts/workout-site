@@ -1,0 +1,36 @@
+---
+layout: base.njk
+title: Home
+---
+<section class="hero">
+  <p class="eyebrow">A Sustainable 3-Day Routine</p>
+  <h1>Full Body<br>Workout Regimen</h1>
+  <p class="sub">Strength, mobility, and conditioning built on well-established fitness fundamentals — designed for real life, recovery, and long-term health.</p>
+</section>
+
+<section class="day-cards">
+  {% for day in workouts.days %}
+  <a class="day-card" href="/workout-{{ day.key }}/">
+    <span class="day-card-tag">Day {{ day.letter }}</span>
+    <h2>{{ day.title }}</h2>
+    <p>{{ day.focus }}</p>
+    <span class="day-card-cta">View workout →</span>
+  </a>
+  {% endfor %}
+</section>
+
+<section class="cycle-note">
+  <p>{{ workouts.frequency }}</p>
+</section>
+
+<section class="guidelines">
+  <h2>How to Cycle It</h2>
+  <div class="guideline-grid">
+    {% for g in workouts.guidelines %}
+    <div class="guideline-card">
+      <h3>{{ g.title }}</h3>
+      <p>{{ g.text }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,12 @@
+{
+  "name": "workout-regimen-site",
+  "version": "1.0.0",
+  "description": "A full body workout regimen site (Day A / B / C) built with Eleventy.",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

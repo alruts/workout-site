@@ -1,0 +1,45 @@
+---
+layout: base.njk
+pagination:
+  data: workouts.days
+  size: 1
+  alias: day
+permalink: "/workout-{{ day.key }}/"
+eleventyComputed:
+  title: "Day {{ day.letter }} — {{ day.title }}"
+---
+<section class="day-header">
+  <span class="day-tag">Day {{ day.letter }}</span>
+  <h1>{{ day.title }}</h1>
+  <p class="focus">{{ day.focus }}</p>
+</section>
+
+<p class="warmup-note">Warm up first: 5 minutes light cardio + dynamic stretches (leg swings, arm circles, bodyweight squats).</p>
+
+<section class="exercise-list">
+  {% for ex in day.exercises %}
+  <article class="exercise">
+    <div class="exercise-heading">
+      <h2>{{ ex.name }}</h2>
+      <span class="ex-target">{{ ex.target }}</span>
+      <span class="ex-sets">{{ ex.sets }}</span>
+    </div>
+    <p class="ex-detail">{{ ex.detail }}</p>
+    <p class="ex-tempo"><strong>Tempo:</strong> {{ ex.tempo }}</p>
+    <p class="ex-alt">Alternative: {{ ex.alternative }}</p>
+  </article>
+  {% endfor %}
+</section>
+
+<div class="cooldown-box">
+  <strong>Cooldown:</strong> {{ day.cooldown }}
+</div>
+
+<nav class="day-switcher">
+  {% for d in workouts.days %}
+    {% if d.key != day.key %}
+      <a href="/workout-{{ d.key }}/">Go to Day {{ d.letter }} →</a>
+    {% endif %}
+  {% endfor %}
+  <a href="/">← Back home</a>
+</nav>
