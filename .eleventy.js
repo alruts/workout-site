@@ -3,7 +3,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
 
   return {
-    pathPrefix: "/workout-regimen/",
     dir: {
       input: "src",
       output: "_site",

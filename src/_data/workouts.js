@@ -13,7 +13,7 @@ module.exports = {
       key: "a",
       letter: "A",
       title: "Strength Foundation",
-      focus: "Compound lifts & core.",
+      focus: "Compound lifts & core — builds the base for everything else.",
       exercises: [
         {
           name: "Goblet Squat",
@@ -22,7 +22,7 @@ module.exports = {
           detail:
             "Hold a dumbbell or kettlebell at chest height. Chest up, knees track over toes, sit hips back and down until thighs are at least parallel to the floor.",
           tempo: "2s down, 1s pause, drive up. Exhale on the way up.",
-          alternative: "Back squat",
+          alternative: "Back squat (barbell) — or bodyweight squat if new to training",
         },
         {
           name: "Push-ups",

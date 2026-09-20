@@ -63,4 +63,3 @@ home page cards and the day-switcher links on other pages.
 Colors, spacing, and fonts all live in `src/css/style.css`. The green
 theme color is set once at the top via the `--green` CSS variable —
 change it there to re-theme the whole site.
-# workout-site
