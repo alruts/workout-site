@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ title }} · Full Body Workout Regimen</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="{{ "/css/style.css" | url }}">
   <link rel="icon" href="data:,">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="/">Full Body Workout Regimen</a>
+    <a class="brand" href="{{ "/" | url }}">Full Body Workout Regimen</a>
     <nav class="site-nav">
-      <a href="/workout-a/">Day A</a>
-      <a href="/workout-b/">Day B</a>
-      <a href="/workout-c/">Day C</a>
+      <a href="{{ "/workout-a/" | url }}">Day A</a>
+      <a href="{{ "/workout-b/" | url }}">Day B</a>
+      <a href="{{ "/workout-c/" | url }}">Day C</a>
     </nav>
   </header>
 

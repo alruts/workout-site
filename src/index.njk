@@ -10,7 +10,7 @@ title: Home
 
 <section class="day-cards">
   {% for day in workouts.days %}
-  <a class="day-card" href="/workout-{{ day.key }}/">
+  <a class="day-card" href="{{ ("/workout-" + day.key + "/") | url }}">
     <span class="day-card-tag">Day {{ day.letter }}</span>
     <h2>{{ day.title }}</h2>
     <p>{{ day.focus }}</p>

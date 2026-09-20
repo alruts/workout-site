@@ -38,8 +38,8 @@ eleventyComputed:
 <nav class="day-switcher">
   {% for d in workouts.days %}
     {% if d.key != day.key %}
-      <a href="/workout-{{ d.key }}/">Go to Day {{ d.letter }} →</a>
+      <a href="{{ ("/workout-" + d.key + "/") | url }}">Go to Day {{ d.letter }} →</a>
     {% endif %}
   {% endfor %}
-  <a href="/">← Back home</a>
+  <a href="{{ "/" | url }}">← Back home</a>
 </nav>
