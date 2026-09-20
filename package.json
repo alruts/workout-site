@@ -2,11 +2,24 @@
   "name": "workout-regimen-site",
   "version": "1.0.0",
   "description": "A full body workout regimen site (Day A / B / C) built with Eleventy.",
+  "homepage": "https://github.com/alruts/workout-site#readme",
+  "bugs": {
+    "url": "https://github.com/alruts/workout-site/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alruts/workout-site.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": ".eleventy.js",
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
-  }
+  },
+  "keywords": []
 }
